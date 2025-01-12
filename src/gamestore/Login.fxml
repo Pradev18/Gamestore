@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #252727;" stylesheets="@../resources/css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gamestore.LoginController">
+   <children>
+      <Label layoutX="31.0" layoutY="187.0" text="Username:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="269.0" text="Password:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="loginUserName" layoutX="227.0" layoutY="186.0" prefHeight="37.0" prefWidth="272.0" style="-fx-background-radius: 10;" />
+      <PasswordField fx:id="loginPasswordField" layoutX="227.0" layoutY="268.0" prefHeight="37.0" prefWidth="272.0" style="-fx-background-radius: 10;" />
+      <Button fx:id="loginButton" layoutX="303.0" layoutY="336.0" mnemonicParsing="false" onAction="#processLogin" prefHeight="51.0" prefWidth="300.0" style="-fx-background-color: #15ea4e;" styleClass="my-button" text="Login">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Hyperlink alignment="CENTER_RIGHT" layoutX="207.0" layoutY="403.0" onAction="#registrationLink" prefHeight="35.0" prefWidth="286.0" text="Create a new account? Register" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Hyperlink>
+      <Label fx:id="errorMessage" layoutX="31.0" layoutY="444.0" text="Error " textFill="#f82020">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="252.0" layoutY="14.0" prefHeight="89.0" prefWidth="196.0" text="GBox Login" textFill="#15ea4e">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="120.0" prefHeight="28.0" prefWidth="431.0" text="Welcome to GBox Gaming World. Login Fast!!" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+   <padding>
+      <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+   </padding>
+</AnchorPane>
